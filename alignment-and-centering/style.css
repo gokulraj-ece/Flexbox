@@ -30,25 +30,42 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 /* We start writing out flexbox here. The above is just page setup */
 .container {
-  display:flex;
-  border:10px solid mistyrose;
-  height:100vh;
-  align-items:flex-start;
+  display: flex;
+  border: 10px solid goldenrod;
+  min-height: 100vh;
+  /*flex-direction: column;*/
+  /*flex-wrap: wrap;*/
+  /* main axis */
+  /*justify-content: center;*/
+  /* cross axis, needs height to work */
+  align-items: flex-start;
+  /* cross axis, needs a wrapper */
+  /*align-content: center;*/
 }
 
 .box {
-  width:33.333%;
+  /*width: calc(33.3333% - 20px);*/
+  /*margin: 10px*/
+  width: 33.3333%;
+  /*padding: 10px;*/
+  /*flex: 1;*/
 }
 
-.box2 {
+.box3 {
+  /*order: 1;*/
+  /*font-size: 30px;*/
   padding-bottom: 200px;
+  align-self: flex-end;
 }
 
-.box6 {
+.box7 {
+  /*order: 2;*/
+  /*font-size: 25px;*/
   padding-bottom: 0;
 }
 
-.box9 {
+.box5 {
+  /*order: -1;*/
+  /*font-size: 200px;*/
   padding-bottom: 50px;
-  align-self:stretch;
 }

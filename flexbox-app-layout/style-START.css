@@ -92,13 +92,37 @@ a.button {
 
 
 /*
-  Everything So far is Cosmetic styling 
+  Everything So far is Cosmetic styling
 
   Flexbox + Important CSS Starts Here
 
 */
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
 
+.app-wrap > * {
+  flex: 1 1 auto;
+}
 
-/*
-  Overall Layout
-*/
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.content {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.icon-bar {
+  display: flex;
+  border: 5px solid red;
+}
+
+.icon-bar a {
+  flex: 1;
+}

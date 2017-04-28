@@ -34,10 +34,39 @@ a:hover {
   background:rgba(0,0,0,0.4);
 }
 
-
+/* flex container */
 .slider-nav ul {
   list-style: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  display: flex;
+  /*align-items: center;*/
 }
 
+/* flex item */
+.slider-nav li {
+  flex: 2;  /* this is a flex item-ish */
+  text-align: center;
+  display: flex; /* Nested flex container */
+}
+
+.arrow a {
+  font-size: 30px;
+}
+
+.slider-nav .arrow {
+  flex: 1;
+}
+
+.slider-nav a {
+  flex-basis: 100%;
+  /* we want to stretch and center */
+  display: flex;
+  align-items: center;
+}
+
+/* flex item */
+.slider-nav span {
+  width: 100%;
+  display: block;
+}
